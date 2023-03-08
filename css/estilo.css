@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"); /* ESTILOS GENERALES */
+html {
+  font-size: 62.5%;
+}
+html body {
+  background-color: #161718;
+  color: #fafafa;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+/*HEADER*/
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  height: 10rem;
+}
+.encabezado .tituloPrincipal {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 3rem;
+}
+.encabezado .tituloPrincipal i {
+  font-size: 4rem;
+  color: #27a776;
+}
+.encabezado .tituloPrincipal h1 {
+  display: inline-block;
+  color: #fafafa;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.encabezado ul {
+  display: flex;
+  list-style-type: none;
+}
+.encabezado ul li {
+  margin-right: 3rem;
+}
+.encabezado ul li a {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 3rem;
+  transition: all 0.3s ease;
+}
+.encabezado ul li a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* HERO */
+.hero {
+  width: 100%;
+  height: calc(100vh - 10rem);
+  position: relative;
+  display: inline-block;
+}
+.hero h2 {
+  margin-bottom: 1rem;
+  font-size: 3.8rem;
+  font-weight: 500;
+}
+.hero h2 span {
+  font-weight: 700;
+  position: relative;
+  padding: 0 5px;
+}
+.hero h2 span::before {
+  content: "";
+  position: absolute;
+  height: 30%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 4px;
+  background-color: #27a776;
+  z-index: -1;
+}
+.hero p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+}
+.hero a {
+  background-color: #27a776;
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.hero a:hover {
+  background-color: #2cbc85;
+}
+
+/* GALERIA */
+.introGaleria {
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #27a776;
+  margin-bottom: 3rem;
+}
+.introGaleria h2 {
+  color: #fafafa;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.imagenGaleria {
+  border-radius: 1rem;
+  padding: 0.4rem;
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+  filter: grayscale(50%);
+}
+.imagenGaleria:hover {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #27a776;
+  padding: 1.5rem;
+  margin-top: 2.5rem;
+}
+footer h3 {
+  font-size: 3.5rem;
+}
+footer p {
+  font-size: 2rem;
+}
+footer li {
+  list-style: none;
+  display: inline-block;
+  margin: 1rem;
+}
+footer li a {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 3rem;
+  transition: all 0.3s ease;
+}
+
+/* MEDIAS */
+@media (max-width: 767px) {
+  .imagenGaleria {
+    max-width: 90%;
+    margin: auto;
+  }
+  .tituloPrincipal {
+    display: none;
+  }
+  .introGaleria {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

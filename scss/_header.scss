@@ -1,0 +1,53 @@
+/*HEADER*/
+
+@mixin anclas {
+    text-decoration: none;
+    color: $color_1;
+    font-size: 3rem;
+    transition: all 0.3s ease;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    height: 10rem;
+
+    .tituloPrincipal {
+        text-decoration: none;
+        color: $color_1;
+        font-size: 3rem;
+
+        i {
+            font-size: 4rem;
+            color: $color_2;
+        }
+
+        h1 {
+            display: inline-block;
+            color: $color_1;
+            font-size: 4rem;
+            font-weight: 700;
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+
+        li {
+            margin-right: 3rem;
+
+            a {
+                @include anclas;
+
+                &:hover {
+                    color: $color_3;
+                }
+            }
+        }
+    }
+}
+
+

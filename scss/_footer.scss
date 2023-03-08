@@ -1,0 +1,27 @@
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #27a776;
+    padding: 1.5rem;
+    margin-top: 2.5rem;
+    h3 {
+        font-size: 3.5rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+        margin: 1rem;
+
+        a {
+            @include anclas;
+        }
+    }
+}
